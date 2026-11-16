@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fyll i ditt gruppnummer här -->
+    <title>Labb 2 - Grupp X</title>
+
+    <!-- Uppgift 3: Kopplar script-filen -->
+    <script src="script.js" defer></script>
+
+    <!-- Enkel styling (frivilligt enligt uppgiften, men gör att man ser elementen tydligt) -->
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .textfield { display: block; margin-bottom: 15px; padding: 5px; }
+        .checkbox-container { margin-bottom: 20px; }
+        #myDiv { 
+            width: 200px; 
+            height: 100px; 
+            border: 2px solid black; 
+            margin-top: 20px;
+            padding: 10px;
+        }
+        button { padding: 10px 15px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Labb 2 - DOM och Events</h1>
+
+    <!-- Uppgift 2: HTML-element -->
+    
+    <!-- Input 1 -->
+    <label for="color">Skriv en färg (t.ex. red, blue, green):</label>
+    <input type="text" name="color" id="color" class="textfield">
+
+    <!-- Input 2 -->
+    <label for="content">Skriv text som ska hamna i div-elementet:</label>
+    <input type="text" name="content" id="content" class="textfield">
+
+    <!-- Input 3 (Checkbox) -->
+    <div class="checkbox-container">
+        <input type="checkbox" name="divStyle" id="divStyle" class="checkbox">
+        <label for="divStyle">Ändra bakgrundsfärg på diven</label>
+    </div>
+
+    <!-- Knapp -->
+    <button id="removeBtn">Ta bort Div-elementet</button>
+
+    <!-- Div-element -->
+    <div id="myDiv"></div>
+
+</body>
+</html>
